@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #94badf;
+    font-size: 20px;
+}
+
+.header {
+    width: 100%;
+}
+
+.videowrapper {
+    position: relative;
+}
+
+#homevideo {
+    max-width: 100%;
+}
+
+.content-on-video {
+    position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      right: 0;
+      text-align: center;
+    color: white;
+
+}
+
+.content-on-video-mobile {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+ul li a {
+    font-family: "Open Sans";
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+.content-on-video h1, h2 {
+    font-family: "Courgette";
+    color: white;
+    width: 80%;
+    max-width: 1200px;
+    text-shadow: 2px 2px #637489;
+}
+
+.content-on-video h1 {
+    font-size: 2.5rem;
+    margin: 10% auto 5% auto;
+
+}
+
+.content-on-video h2 {
+    font-size: 1.6rem;
+    margin: 0 auto 10% auto;
+}
+
+.search {
+    background-color: white;
+    width: 80%;
+    position: absolute;
+    top: 750px;
+    left: 10%;
+}
+
+.search h1 {
+    font-family: "Courgette";
+    margin-left: 5%;
+}
+
+.searchheading {
+    background-color: #4d74a7;
+    width: 100%;
+}
+
+.searchheading h2 {
+    color: #739ac5;
+    font-size: 1.4rem;
+    text-align: left;
+    padding: 20px 30px;
+    font-family: "Open Sans";
+    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 1% 5%;
+}
+
+.vignette {
+    border: 1px solid #dedede;
+    background-color: white;
+    margin: 1%;
+    flex-grow: 1;
+}
+
+.bigger {
+    border: 1px solid #dedede;
+    background-color: white;
+    margin: 1%;
+    flex-grow: 2;
+}
+
+.vignette img {
+    width: 100%;
+    min-width: 250px;
+}
+
+.vignette h5 {
+    color: #a7c540;
+    font-family: "Courgette";
+    font-size: 0.9rem;
+}
+
+.vignette p {
+    line-height: 1.5em;
+    text-align: left;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.houseinfo {
+    color: #a7c540;
+    font-size: 0.7em;
+}
+
+.imgwrapper {
+    text-align: left;
+}
+
+.pricetag {
+    color: white;
+    background: linear-gradient(#b8c95b, #75ac05, #b8c95b);
+    height: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    left: -15px;
+    bottom: -50px;
+}
+
+.footer {
+    width: 120%;
+    margin-left: -11%;
+    background-color: #94badf;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+.footer p {
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        font-size: 18px;
+    }
+    #homevideo {
+        width: 1000px;
+    }
+    .search {
+        top: 500px;
+    }
+    .vignette img {
+        min-width: 160px;
+    }
+    nav ul {
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 16px;
+    }
+    #homevideo {
+        width: 800px;
+    }
+    .search {
+        top: 400px;
+    }
+    .vignette img {
+        min-width: 140px;
+    }
+
+    .content-on-video h1 {
+        margin: 8% auto 5% auto;
+    }
+    nav ul {
+        height: 75px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+
+    #homevideo {
+        width: 100%;
+    }
+
+    .content-on-video {
+        display: none;
+    }
+
+    .content-on-video-mobile {
+        display: block;
+        padding: 10px;
+    }
+
+    .content-on-video-mobile h1 {
+        color: white;
+        font-family: "Courgette";
+    }
+
+    .search {
+        top: 650px;
+    }
+
+    .vignette img {
+        min-width: 140px;
+    }
+
+
+
+    nav {
+        text-align: left;
+    }
+    nav ul {
+        display: block;
+        height: auto;
+        align-items: center;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+
+}
