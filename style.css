@@ -21,11 +21,11 @@ body {
 
 .content-on-video {
     position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: 0;
-      right: 0;
-      text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    text-align: center;
     color: white;
 
 }
@@ -38,7 +38,7 @@ nav ul {
     display: flex;
     justify-content: space-around;
     height: 100px;
-    align-items: center;
+    align-items: top;
 }
 
 nav ul li {
@@ -66,20 +66,20 @@ ul li a:hover {
 
 .content-on-video h1 {
     font-size: 2.5rem;
-    margin: 10% auto 5% auto;
+    margin: 12% auto 5% auto;
 
 }
 
 .content-on-video h2 {
     font-size: 1.6rem;
-    margin: 0 auto 10% auto;
+    margin: 0 auto 12% auto;
 }
 
 .search {
     background-color: white;
     width: 80%;
     position: absolute;
-    top: 750px;
+    top: 700px;
     left: 10%;
 }
 
@@ -106,7 +106,7 @@ ul li a:hover {
     display: flex;
     flex-direction: row;
     text-align: center;
-    margin: 1% 5%;
+    justify-content: space-around;
 }
 
 .vignette {
@@ -114,6 +114,7 @@ ul li a:hover {
     background-color: white;
     margin: 1%;
     flex-grow: 1;
+    /*flex-basis: 250px;*/
 }
 
 .bigger {
@@ -125,7 +126,7 @@ ul li a:hover {
 
 .vignette img {
     width: 100%;
-    min-width: 250px;
+    min-width: 300px;
 }
 
 .vignette h5 {
@@ -174,7 +175,29 @@ ul li a:hover {
     font-size: 0.8rem;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 1100px) and (max-width: 1300px) {
+    .vignette img {
+        min-width: 290px;
+    }
+
+    .search {
+        top: 600px;
+    }
+}
+
+
+@media screen and (min-width: 1100px) and (max-width: 1250px) {
+    .vignette img {
+        min-width: 220px;
+    }
+
+    .search {
+        top: 550px;
+    }
+}
+
+
+@media screen and (min-width: 900px) and (max-width: 1099px) {
     body {
         font-size: 18px;
     }
@@ -185,14 +208,15 @@ ul li a:hover {
         top: 500px;
     }
     .vignette img {
-        min-width: 160px;
+        min-width: 200px;
     }
     nav ul {
         height: 80px;
     }
 }
 
-@media screen and (max-width: 800px) {
+
+@media screen and (min-width: 770px) and (max-width: 899px) {
     body {
         font-size: 16px;
     }
@@ -200,10 +224,10 @@ ul li a:hover {
         width: 800px;
     }
     .search {
-        top: 400px;
+        top: 380px;
     }
     .vignette img {
-        min-width: 140px;
+        min-width: 160px;
     }
 
     .content-on-video h1 {
@@ -215,7 +239,7 @@ ul li a:hover {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 769px) {
     body {
         font-size: 15px;
     }
@@ -245,8 +269,6 @@ ul li a:hover {
     .vignette img {
         min-width: 140px;
     }
-
-
 
     nav {
         text-align: left;
